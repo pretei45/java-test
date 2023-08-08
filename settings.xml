@@ -4,7 +4,7 @@
     <mirrors>
         <mirror>
             <id>nexus-id</id>
-            <url>http://ec2-3-138-174-41.us-east-2.compute.amazonaws.com:8081//repository/maven-public/</url>
+            <url>https://repo.maven.apache.org/maven2/</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
