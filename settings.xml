@@ -1,16 +1,11 @@
 <settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
           xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
-    <mirrors>
-        <mirror>
-            <id>nexus-id</id>
-            <url>http://ec2-3-138-174-41.us-east-2.compute.amazonaws.com:8081/maven-nexus-repo/maven-public</url>
-            <mirrorOf>*</mirrorOf>
-        </mirror>
-    </mirrors>
+          
     <servers>
         <server>
-            <id>nexus</id>
+            <id>nexus-id</id>
+            <url>http://ec2-3-138-174-41.us-east-2.compute.amazonaws.com:8081/maven-nexus-repo/maven-public</url>
             <username>${nexus.username}</username>
             <password>${nexus.password}</password>
         </server>
