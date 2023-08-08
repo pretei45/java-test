@@ -4,15 +4,15 @@
     <mirrors>
         <mirror>
             <id>nexus-id</id>
-            <url>https://repo.maven.apache.org/maven2/</url>
+            <url>http://ec2-3-138-174-41.us-east-2.compute.amazonaws.com:8081/maven-nexus-repo/maven-public</url>
             <mirrorOf>*</mirrorOf>
         </mirror>
     </mirrors>
     <servers>
         <server>
             <id>nexus</id>
-            <username>NEXUS_USERNAME</username>
-            <password>NEXUS_PASSWORD</password>
+            <username>${nexus.username}</username>
+            <password>${nexus.password}</password>
         </server>
     </servers>
 </settings>
