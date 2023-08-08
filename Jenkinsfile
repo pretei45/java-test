@@ -13,7 +13,8 @@ pipeline{
 		}
 		stage ('2-Maven Build'){
 			steps{
-				sh 'mvn clean package'
+				sh 'mvn clean'
+				sh 'mvn package'
 			}
 		}
 		stage ('3-Code Quality Analysis'){
