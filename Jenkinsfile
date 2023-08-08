@@ -18,11 +18,11 @@ pipeline{
 		}
 		stage ('3-Code Quality Analysis'){
 			steps{
-				sh 'mvn clean verify sonar:sonar \
-                -Dsonar.projectKey=practicecodereview \
-                -Dsonar.projectName='practicecodereview' \
-                -Dsonar.host.url=http://ec2-3-144-237-156.us-east-2.compute.amazonaws.com:9000 \
-                -Dsonar.token=sqp_8184006574c8ab4e7098cddfac2cc17fb39a83ac'
+				sh 'mvn clean verify sonar:sonar' +
+                "-Dsonar.projectKey=practicecodereview" +
+                "-Dsonar.projectName='practicecodereview' " +
+                "-Dsonar.host.url=http://ec2-3-144-237-156.us-east-2.compute.amazonaws.com:9000" +
+                "-Dsonar.token=sqp_8184006574c8ab4e7098cddfac2cc17fb39a83ac"
 			}
 		}
 		stage ('4-Nexus Backup'){
