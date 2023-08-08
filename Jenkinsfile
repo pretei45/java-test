@@ -31,6 +31,7 @@ pipeline{
                     sh "docker tag simple-web-app:latest ${NEXUS_URL}/simple-web-app:latest"
                     sh "docker login -u ${NEXUS_USERNAME} -p ${NEXUS_PASSWORD} ${NEXUS_URL}"
                     sh "docker push ${NEXUS_URL}/simple-web-app:latest"
+				}	
 			}
 		}
         stage ('5-Image Build'){
